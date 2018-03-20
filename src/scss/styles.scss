@@ -73,6 +73,7 @@ body {
 	&__title {
 		font: 36px 'Proxima Nova Semibold', Arial, sans-serif;
 		margin: 30px 0 60px;
+		color: $text-color;
 		&--reverse {
 			color: #fefcfe;
 		}
@@ -85,9 +86,11 @@ body {
 	&__img {
 		position: relative;
 		height: 555px;
+		overflow: hidden;
+		z-index: 100;
 		// height: auto;
 		img {
-			// min-height: 100%;
+			min-height: 100%;
 			min-width: 100%;
 			position: absolute;
 			left: 50%;
@@ -108,6 +111,27 @@ body {
 	}
 }
 
+// &__photo {
+// 		width: 230px;
+// 		height: 230px;
+// 		background-color: $section-color;
+// 		border-radius: 50%;
+// 		border: 15px solid $section-color;
+// 		position: absolute;
+// 		overflow: hidden;
+// 		top: -32%;
+// 		left: 18%;
+// 		z-index: 100;
+// 		img {
+// 			min-width: 100%;
+// 			min-height: 100%;
+// 			position: absolute;
+// 			left: 50%;
+// 			top: 50%;
+// 			transform: translate(-50%, -50%);
+// 		}
+// 	}
+
 .overlay {
 	position: absolute;
 	top: 0;
@@ -118,18 +142,22 @@ body {
 }
 
 .btn {
-	text-decoration: none;
 	padding: 15px 50px;
 	border: 1px solid #7d7a7c;
 	color: #7d7a7c;
 	font: 400 20px/1 'PT Sans', Arial, sans-serif;
 	font-style: italic;
 	border-radius: 0;
+	background-color: transparent;
 	&:hover,
 	&:focus,
 	&:active {
 		color: #fff;
 		background-color: #7d7a7c;
+	}
+	&--center {
+		display: block;
+		margin: 0 auto;
 	}
 	&--reverse {
 		color: #fff;
@@ -182,7 +210,7 @@ body {
 	}
 }
 
-.col-md-6, .col-md-4 {
+.about .col-md-6, .about .col-md-4 {
 	padding: 0;
 	text-align: center;
 }
@@ -208,52 +236,62 @@ body {
 // }
 
 .team {
-	// padding: ;
+	padding: 55px 100px;
+	background-color: $section-color;
+	text-align: center;
+	&__card {
+		position: relative;
+	}
+	&__photo {
+		width: 230px;
+		height: 230px;
+		background-color: $section-color;
+		border-radius: 50%;
+		border: 15px solid $section-color;
+		position: absolute;
+		overflow: hidden;
+		top: -32%;
+		left: 18%;
+		z-index: 100;
+		img {
+			min-width: 100%;
+			min-height: 100%;
+			position: absolute;
+			left: 50%;
+			top: 50%;
+			transform: translate(-50%, -50%);
+		}
+	}
+	&__body {
+		height: 355px;
+		background-color: #fff;
+		padding: 165px 0 0;
+		margin: 100px 0 0;
+		position: relative;
+	}
+	&__name {
+		color: $main-color;
+		font-size: 24px;
+		display: block;
+		text-transform: uppercase;
+		margin: 0 0 30px 0;
+		padding: 0 50px 0;
+	}
+	&__position {
+		font: 400 24px/1 'PT Sans', Arial, sans-serif;
+		font-style: italic;
+		display: block;
+		padding: 0 50px 0;
+	}
+	&__footer {
+		height: 70px;
+		background-color: $main-color;
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		right: 0;
+	}
 }
-
-
-
-// .wrap {
-// 	background: url(http://lorempixel.com/output/people-q-g-640-200-1.jpg) no-repeat;
-//     background-size:cover;
-// }
-
-// #a{
-//     overflow:hidden;
-//     border-radius:20px;
-//     position:relative;
-//     display:inline-block;
-// }
-// #a:before, #a:after{
-//     content:'';
-//     width: 100px;
-//     border-radius: 50%;
-// }
-// #a:before {
-//     height: 100px;
-//     float:left;    
-//     border: 1px solid black;
-//     background: grey;
-// }
-// #a:after {
-//     position:absolute;
-//     left:14px; top:-6px;
-//     height:114px;
-//     box-shadow: 1px 0px 0px 0px #000, 110px 0px 0px 68px #808080;
-//     background:none;
-//     z-index:-1;
-// }
-// #b {
-//     width: 200px;
-//     height: 100px;
-//     background:none;
-//     margin-left:-15px;
-//     border: 1px solid black;
-//     border-left:none;
-//     float:left;
-//     border-top-right-radius: 20px;
-//     border-bottom-right-radius: 20px;
-// }
 
 
 

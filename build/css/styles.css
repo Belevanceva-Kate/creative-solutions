@@ -5017,7 +5017,8 @@ body {
 
 .section__title {
   font: 36px 'Proxima Nova Semibold', Arial, sans-serif;
-  margin: 30px 0 60px; }
+  margin: 30px 0 60px;
+  color: #665f60; }
   .section__title--reverse {
     color: #fefcfe; }
 
@@ -5026,8 +5027,11 @@ body {
   background-color: #ebebeb; }
   .about__img {
     position: relative;
-    height: 555px; }
+    height: 555px;
+    overflow: hidden;
+    z-index: 100; }
     .about__img img {
+      min-height: 100%;
       min-width: 100%;
       position: absolute;
       left: 50%;
@@ -5052,16 +5056,19 @@ body {
   background-color: rgba(159, 154, 207, 0.5); }
 
 .btn {
-  text-decoration: none;
   padding: 15px 50px;
   border: 1px solid #7d7a7c;
   color: #7d7a7c;
   font: 400 20px/1 'PT Sans', Arial, sans-serif;
   font-style: italic;
-  border-radius: 0; }
+  border-radius: 0;
+  background-color: transparent; }
   .btn:hover, .btn:focus, .btn:active {
     color: #fff;
     background-color: #7d7a7c; }
+  .btn--center {
+    display: block;
+    margin: 0 auto; }
   .btn--reverse {
     color: #fff;
     border-color: #fff; }
@@ -5101,7 +5108,7 @@ body {
       display: inline-block;
       margin: 0 5px; }
 
-.col-md-6, .col-md-4 {
+.about .col-md-6, .about .col-md-4 {
   padding: 0;
   text-align: center; }
 
@@ -5117,6 +5124,57 @@ body {
   height: 545px;
   overflow: hidden;
   margin-bottom: 45px; }
+
+.team {
+  padding: 55px 100px;
+  background-color: #ebebeb;
+  text-align: center; }
+  .team__card {
+    position: relative; }
+  .team__photo {
+    width: 230px;
+    height: 230px;
+    background-color: #ebebeb;
+    border-radius: 50%;
+    border: 15px solid #ebebeb;
+    position: absolute;
+    overflow: hidden;
+    top: -32%;
+    left: 18%;
+    z-index: 100; }
+    .team__photo img {
+      min-width: 100%;
+      min-height: 100%;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      -webkit-transform: translate(-50%, -50%);
+              transform: translate(-50%, -50%); }
+  .team__body {
+    height: 355px;
+    background-color: #fff;
+    padding: 165px 0 0;
+    margin: 100px 0 0;
+    position: relative; }
+  .team__name {
+    color: #9f9acf;
+    font-size: 24px;
+    display: block;
+    text-transform: uppercase;
+    margin: 0 0 30px 0;
+    padding: 0 50px 0; }
+  .team__position {
+    font: 400 24px/1 'PT Sans', Arial, sans-serif;
+    font-style: italic;
+    display: block;
+    padding: 0 50px 0; }
+  .team__footer {
+    height: 70px;
+    background-color: #9f9acf;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0; }
 
 @media screen and (max-width: 768px) {
   .toggle-nav {
