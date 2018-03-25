@@ -20,38 +20,37 @@
 <body>
 	<!-- BEGIN header -->
 	<header id="home" class="header" style="background-image: linear-gradient(rgba(159,154,207,0.5), rgba(159,154,207,0.5)), url(img/bg.jpg);">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-1">
-					<a href="#home" class="logo">
-						<svg width="53.531" height="72">
-							<use xlink:href="#logo"></use>
-						</svg>
-					</a>
-				</div>
-				<div class="col-md-11">
-					<nav class="header__nav">
-						<a href="#" class="toggle-nav"></a>
-						<ul class="nav justify-content-end">
-							<li class="nav-item">
-								<a class="nav-link scrollTo active" href="#home">Home</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link scrollTo" href="#about">About</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link scrollTo" href="#services">Services</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link scrollTo" href="#works">Works</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link scrollTo" href="#contact">Contact</a>
-							</li>
-						</ul>
-					</nav> 
-				</div>
+		<!-- <div class="container"> -->
+		<div id="navbar">
+			<div class="navbar-wrap">
+				<a href="#home" class="logo scrollTo">
+					<svg width="53.531" height="72">
+						<use xlink:href="#logo"></use>
+					</svg>
+				</a>
+				<nav class="header__nav">
+					<a href="#" class="toggle-nav"></a>
+					<ul class="nav justify-content-end">
+						<li class="nav-item">
+							<a class="nav-link scrollTo" href="#home">Home</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link scrollTo" href="#about">About</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link scrollTo" href="#services">Services</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link scrollTo" href="#works">Works</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link scrollTo" href="#contact">Contact</a>
+						</li>
+					</ul>
+				</nav>
 			</div>
+		</div>
+		<div class="container">
 			<div class="row">
 				<div class="col-md-10 offset-md-1 text-center section__heading">
 					<h1 class="header__title">CreativE DIGITAL Project</h1>
@@ -88,30 +87,30 @@
 	<section class="section services" id="services">
 		<div class="container">
 			<div class="row">
-				<div class="col-md-8">
+				<div class="col-md-8 col-sm-12">
 					<div class="row">
-						<div class="col-md-6">
+						<div class="col-md-6 col-sm-6">
 							<div class="card card--fill">
 								<img src="img/i1.png" alt="" class="icon">
 								<h3 class="card__title">GRAPHIC DESIGN</h3>
 								<span class="card__description">Cras mattis consectetur purus sit amet fermentum.</span>
 							</div>
 						</div>
-						<div class="col-md-6">
+						<div class="col-md-6 col-sm-6">
 							<div class="card">
 								<img src="img/i2.png" alt="" class="icon">
 								<h3 class="card__title">WEB DEVELOPMENT</h3>
 								<span class="card__description">Cras mattis consectetur purus sit amet fermentum.</span>
 							</div>
 						</div>
-						<div class="col-md-6">
+						<div class="col-md-6 col-sm-6">
 							<div class="card">
 								<img src="img/i4.png" alt="" class="icon">
 								<h3 class="card__title">SEO & MARKETING</h3>
 								<span class="card__description">Cras mattis consectetur purus sit amet fermentum.</span>
 							</div>
 						</div>
-						<div class="col-md-6">
+						<div class="col-md-6 col-sm-6">
 							<div class="card card--fill">
 								<img src="img/i5.png" alt="" class="icon">
 								<h3 class="card__title">MOBILE DEVELOPMENT</h3>
@@ -120,7 +119,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-md-4">
+				<div class="col-md-4 col-sm-12">
 					<div class="card card--lg">
 						<div class="overlay overlay--lg">
 							<img src="img/i3.png" alt="" class="icon">
@@ -143,37 +142,17 @@
 			<div class="row">
 				<div class="col-md-8 offset-md-2">
 					<div class="slider">
-						<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-							<ol class="carousel-indicators">
-			    				<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-			    				<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-			    				<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-			  				</ol>
-			  				<div class="carousel-inner">
-			    				<div class="carousel-item active">
-			      					<img class="d-block w-100" src="img/slider.jpg" alt="First slide">
-			    				</div>
-			    				<div class="carousel-item">
-			      					<img class="d-block w-100" src="img/slider.jpg" alt="Second slide">
-			    				</div>
-			    				<div class="carousel-item">
-			    					<img class="d-block w-100" src="img/slider.jpg" alt="Third slide">
-			    				</div>
-			  				</div>
-			  				<a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-			  					<!-- <svg width="22" height="38" class="slider__arrow">
-									<use xlink:href="#arrow"></use>
-								</svg> -->
-			    				<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-			    				<span class="sr-only">Previous</span>
-			  				</a>
-			  				<a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-			  					<!-- <svg width="22" height="38" class="slider__arrow">
-									<use xlink:href="#arrow"></use>
-								</svg> -->
-			    				<span class="carousel-control-next-icon" aria-hidden="true"></span>
-			    				<span class="sr-only">Next</span>
-			  				</a>
+						<div class="slide">
+							<img src="img/slider.jpg" alt="">
+						</div>
+						<div class="slide">
+							<img src="img/slider.jpg" alt="">
+						</div>
+						<div class="slide">
+							<img src="img/slider.jpg" alt="">
+						</div>
+						<div class="slide">
+							<img src="img/slider.jpg" alt="">
 						</div>
 					</div>
 					<button href="#" class="btn btn--reverse">View Gallery</button>
@@ -184,180 +163,260 @@
 	<!-- END works -->
 
 	<!-- BEGIN team -->
-	<!-- <section class="section team">
+	<section class="section team">
 		<div class="container">
 			<img src="img/i7.png" alt="" class="icon">
 			<h2 class="section__title">MEET OUR TEAM</h2>
 			<div class="row">
-				<div class="col-md-4">
-					<div class="team__card">
-						<div class="team__photo">
-							<img src="img/pers1.jpg" alt="">
+				<div class="col-md-12">
+					<div class="slider-team">
+						<div class="team__card">
+							<div class="team__photo">
+								<img src="img/pers1.jpg" alt="">
+							</div>
+							<div class="team__body">
+								<span class="team__name">Miguel Obrien</span>
+								<span class="team__position">CEO & Founder</span>
+								<div class="team__footer">
+									<ul class="socials">
+										<li class="socials__item">
+											<a href="#" class="socials__icon">
+												<svg width="20" height="20">
+													<use xlink:href="#behance"></use>
+												</svg>
+											</a>
+										</li>
+										<li class="socials__item">
+											<a href="#" class="socials__icon">
+												<svg width="20" height="20">
+													<use xlink:href="#linkedin"></use>
+												</svg>
+											</a>
+										</li>
+										<li class="socials__item">
+											<a href="#" class="socials__icon">
+												<svg width="20" height="20">
+													<use xlink:href="#google"></use>
+												</svg>
+											</a>
+										</li>
+										<li class="socials__item">
+											<a href="#" class="socials__icon">
+												<svg width="20" height="20">
+													<use xlink:href="#facebook"></use>
+												</svg>
+											</a>
+										</li>
+										<li class="socials__item">
+											<a href="#" class="socials__icon">
+												<svg width="20" height="20">
+													<use xlink:href="#twitter"></use>
+												</svg>
+											</a>
+										</li>
+									</ul>
+								</div>
+							</div>
 						</div>
-						<div class="team__body">
-							<span class="team__name">Miguel Obrien</span>
-							<span class="team__position">CEO & Founder</span>
-							<div class="team__footer">
-								<ul class="socials">
-									<li class="socials__item">
-										<a href="#" class="socials__icon">
-											<svg width="20" height="20">
-												<use xlink:href="#behance"></use>
-											</svg>
-										</a>
-									</li>
-									<li class="socials__item">
-										<a href="#" class="socials__icon">
-											<svg width="20" height="20">
-												<use xlink:href="#linkedin"></use>
-											</svg>
-										</a>
-									</li>
-									<li class="socials__item">
-										<a href="#" class="socials__icon">
-											<svg width="20" height="20">
-												<use xlink:href="#google"></use>
-											</svg>
-										</a>
-									</li>
-									<li class="socials__item">
-										<a href="#" class="socials__icon">
-											<svg width="20" height="20">
-												<use xlink:href="#facebook"></use>
-											</svg>
-										</a>
-									</li>
-									<li class="socials__item">
-										<a href="#" class="socials__icon">
-											<svg width="20" height="20">
-												<use xlink:href="#twitter"></use>
-											</svg>
-										</a>
-									</li>
-								</ul>
+						<div class="team__card">
+							<div class="team__photo">
+								<img src="img/pers2.jpg" alt="">
+							</div>
+							<div class="team__body">
+								<span class="team__name">Jackie Carroll</span>
+								<span class="team__position">Art Director</span>
+								<div class="team__footer">
+									<ul class="socials">
+										<li class="socials__item">
+											<a href="#" class="socials__icon">
+												<svg width="20" height="20">
+													<use xlink:href="#behance"></use>
+												</svg>
+											</a>
+										</li>
+										<li class="socials__item">
+											<a href="#" class="socials__icon">
+												<svg width="20" height="20">
+													<use xlink:href="#linkedin"></use>
+												</svg>
+											</a>
+										</li>
+										<li class="socials__item">
+											<a href="#" class="socials__icon">
+												<svg width="20" height="20">
+													<use xlink:href="#google"></use>
+												</svg>
+											</a>
+										</li>
+										<li class="socials__item">
+											<a href="#" class="socials__icon">
+												<svg width="20" height="20">
+													<use xlink:href="#facebook"></use>
+												</svg>
+											</a>
+										</li>
+										<li class="socials__item">
+											<a href="#" class="socials__icon">
+												<svg width="20" height="20">
+													<use xlink:href="#twitter"></use>
+												</svg>
+											</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="team__card">
+							<div class="team__photo">
+								<img src="img/pers3.jpg" alt="">
+							</div>
+							<div class="team__body">
+								<span class="team__name">Ida Morrison</span>
+								<span class="team__position">Designer</span>
+								<div class="team__footer">
+									<ul class="socials">
+										<li class="socials__item">
+											<a href="#" class="socials__icon">
+												<svg width="20" height="20">
+													<use xlink:href="#behance"></use>
+												</svg>
+											</a>
+										</li>
+										<li class="socials__item">
+											<a href="#" class="socials__icon">
+												<svg width="20" height="20">
+													<use xlink:href="#linkedin"></use>
+												</svg>
+											</a>
+										</li>
+										<li class="socials__item">
+											<a href="#" class="socials__icon">
+												<svg width="20" height="20">
+													<use xlink:href="#google"></use>
+												</svg>
+											</a>
+										</li>
+										<li class="socials__item">
+											<a href="#" class="socials__icon">
+												<svg width="20" height="20">
+													<use xlink:href="#facebook"></use>
+												</svg>
+											</a>
+										</li>
+										<li class="socials__item">
+											<a href="#" class="socials__icon">
+												<svg width="20" height="20">
+													<use xlink:href="#twitter"></use>
+												</svg>
+											</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="team__card">
+							<div class="team__photo">
+								<img src="img/pers2.jpg" alt="">
+							</div>
+							<div class="team__body">
+								<span class="team__name">Jackie Carroll</span>
+								<span class="team__position">Designer</span>
+								<div class="team__footer">
+									<ul class="socials">
+										<li class="socials__item">
+											<a href="#" class="socials__icon">
+												<svg width="20" height="20">
+													<use xlink:href="#behance"></use>
+												</svg>
+											</a>
+										</li>
+										<li class="socials__item">
+											<a href="#" class="socials__icon">
+												<svg width="20" height="20">
+													<use xlink:href="#linkedin"></use>
+												</svg>
+											</a>
+										</li>
+										<li class="socials__item">
+											<a href="#" class="socials__icon">
+												<svg width="20" height="20">
+													<use xlink:href="#google"></use>
+												</svg>
+											</a>
+										</li>
+										<li class="socials__item">
+											<a href="#" class="socials__icon">
+												<svg width="20" height="20">
+													<use xlink:href="#facebook"></use>
+												</svg>
+											</a>
+										</li>
+										<li class="socials__item">
+											<a href="#" class="socials__icon">
+												<svg width="20" height="20">
+													<use xlink:href="#twitter"></use>
+												</svg>
+											</a>
+										</li>
+									</ul>
+								</div>
 							</div>
 						</div>
 					</div>
 				</div>
-				<div class="col-md-4">
-					<div class="team__card">
-						<div class="team__photo">
-							<img src="img/pers2.jpg" alt="">
-						</div>
-						<div class="team__body">
-							<span class="team__name">Jackie Carroll</span>
-							<span class="team__position">Art Director</span>
-							<div class="team__footer">
-								<ul class="socials">
-									<li class="socials__item">
-										<a href="#" class="socials__icon">
-											<svg width="20" height="20">
-												<use xlink:href="#behance"></use>
-											</svg>
-										</a>
-									</li>
-									<li class="socials__item">
-										<a href="#" class="socials__icon">
-											<svg width="20" height="20">
-												<use xlink:href="#linkedin"></use>
-											</svg>
-										</a>
-									</li>
-									<li class="socials__item">
-										<a href="#" class="socials__icon">
-											<svg width="20" height="20">
-												<use xlink:href="#google"></use>
-											</svg>
-										</a>
-									</li>
-									<li class="socials__item">
-										<a href="#" class="socials__icon">
-											<svg width="20" height="20">
-												<use xlink:href="#facebook"></use>
-											</svg>
-										</a>
-									</li>
-									<li class="socials__item">
-										<a href="#" class="socials__icon">
-											<svg width="20" height="20">
-												<use xlink:href="#twitter"></use>
-											</svg>
-										</a>
-									</li>
-								</ul>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-4">
-					<div class="team__card">
-						<div class="team__photo">
-							<img src="img/pers3.jpg" alt="">
-						</div>
-						<div class="team__body">
-							<span class="team__name">Art Director</span>
-							<span class="team__position">Designer</span>
-							<div class="team__footer">
-								<ul class="socials">
-									<li class="socials__item">
-										<a href="#" class="socials__icon">
-											<svg width="20" height="20">
-												<use xlink:href="#behance"></use>
-											</svg>
-										</a>
-									</li>
-									<li class="socials__item">
-										<a href="#" class="socials__icon">
-											<svg width="20" height="20">
-												<use xlink:href="#linkedin"></use>
-											</svg>
-										</a>
-									</li>
-									<li class="socials__item">
-										<a href="#" class="socials__icon">
-											<svg width="20" height="20">
-												<use xlink:href="#google"></use>
-											</svg>
-										</a>
-									</li>
-									<li class="socials__item">
-										<a href="#" class="socials__icon">
-											<svg width="20" height="20">
-												<use xlink:href="#facebook"></use>
-											</svg>
-										</a>
-									</li>
-									<li class="socials__item">
-										<a href="#" class="socials__icon">
-											<svg width="20" height="20">
-												<use xlink:href="#twitter"></use>
-											</svg>
-										</a>
-									</li>
-								</ul>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>			
+			</div>
 		</div>
-	</section> -->
+	</section>
 	<!-- END team -->
 
 	<!-- BEGIN feedback -->
 	<section class="section feedback" id="contact">
 		<div id="map"></div>
-		<!-- <div class="container"> -->
 		<div class="feedback__text-wrap">
 			<img src="img/i8.png" alt="" class="icon">
 			<h2 class="section__title section__title--reverse">GET IN TOUCH</h2>
 		</div>
 		<form action="POST" class="form">
-			<input type="text" placeholder="Your Name" required>
-			<input type="text" placeholder="Your Email" required>
-			<textarea name="message" rows="7" id="" placeholder="Your Message" required></textarea>
-			<button class="form__submit">SEND MESSAGE</button>
+			<div class="form__wrap form__wrap--input">
+				<label for="name" class="form__label">Your Name <span>*</span></label>
+				<input type="text" id="name" required>
+			</div>
+			<div class="form__wrap form__wrap--input">
+				<label for="email" class="form__label">Your Email <span>*</span></label>
+				<input type="email" id="email" autocomplete="on" required>
+			</div>
+			<div class="form__wrap">
+				<label for="message" class="form__label">Your Message <span>*</span></label>
+				<textarea name="message" rows="7" id="message"  required></textarea>
+			</div>
+			<button class="form__submit" id="send" disabled>SEND MESSAGE</button>
 		</form>
+		<div class="tool">
+			<div class="tool__wrap">
+				<div class="tool__pic">
+					<img src="img/tool1.png" alt="" class="tool__img">
+				</div>
+				<div class="tool__text">
+					<div class="tool__text-wrap">
+						<span>Ikan Piranha Atas 220C</span>
+						<span>Malang - East Java</span>
+						<span>Indonesia</span>
+					</div>
+				</div>
+			</div>
+			<div class="tool__wrap">
+				<div class="tool__pic">
+					<img src="img/tool2.png" alt="" class="tool__img">
+				</div>
+				<div class="tool__text">
+					<div class="tool__text-wrap">
+						<span>+380 96 567 43 86</span>
+						<span>Alex Abdullah</span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<a href="#home" class="btn-top scrollTo"></a>
 	</section>
 	<!-- END feedback -->
 
@@ -409,6 +468,28 @@
 		</div>
 	</footer>
 	<!-- END footer -->
+
+	<!-- BEGIN modal -->
+	<div class="modal" id="myModal" tabindex="-1" role="dialog">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+	    		<div class="modal-header">
+	    			<h5 class="modal-title"></h5>
+	    			<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+	        			<span aria-hidden="true">&times;</span>
+	    			</button>
+	    		</div>
+	    		<div class="modal-body">
+	    			<p></p>
+	    		</div>
+	    		<div class="modal-footer">
+	    			<button type="button" class="btn btn-primary" data-dismiss="modal">Ok</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- END modal -->
+
 	
 	<svg style="display: none;">
 		<symbol id="logo" viewBox="0 0 53.531 72">
