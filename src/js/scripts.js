@@ -90,8 +90,15 @@ $(document).ready(function() {
 		$(this).prev('.form__label').hide();
 	});
 
+    
+
 	$("input, textarea").blur(function() {
-		$(this).prev('.form__label').show();
+        if ($('#email').val().length) {
+            $(this).prev('.form__label').hide();
+        } else {
+            $(this).prev('.form__label').show();
+        }
+		
 	});
 
 });

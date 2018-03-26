@@ -850,6 +850,9 @@ body {
 			&--input {
 				width: 100%;
 				margin: 0;
+				&:not(:first-of-type) {
+					margin-left: 0;
+				}
 			}
 		}
 		&__submit {

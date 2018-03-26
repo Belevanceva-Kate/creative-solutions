@@ -4,6 +4,7 @@
  * Copyright 2011-2018 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
+@import url("https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700");
 :root {
   --blue: #007bff;
   --indigo: #6610f2;
@@ -5735,6 +5736,8 @@ body {
   .form__wrap--input {
     width: 100%;
     margin: 0; }
+    .form__wrap--input:not(:first-of-type) {
+      margin-left: 0; }
   .form__submit {
     margin-bottom: 40px; }
   .tool {
