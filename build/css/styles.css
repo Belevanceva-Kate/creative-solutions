@@ -5743,4 +5743,6 @@ body {
   .tool {
     top: 215px; }
   #map {
-    height: 1000px; } }
+    height: 1000px; }
+  .modal {
+    width: 80%; } }

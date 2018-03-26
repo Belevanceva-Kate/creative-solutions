@@ -85,23 +85,28 @@ $(document).ready(function() {
 	});
 
 
-	//input focus
+	//placeholder
 	$("input, textarea").focus(function() {
 		$(this).prev('.form__label').hide();
 	});
 
-    
-
 	$("input, textarea").blur(function() {
-        if ($('#email').val().length) {
-            $(this).prev('.form__label').hide();
-        } else {
-            $(this).prev('.form__label').show();
-        }
-		
+        togglePlaceholder($('#name'));
+        togglePlaceholder($('#email'));
+        togglePlaceholder($('#message'));
 	});
 
 });
+
+
+//placeholder
+function togglePlaceholder(el) {
+    if (el.val().trim().length) {
+        el.siblings('.form__label').hide();
+    } else {
+        el.siblings('.form__label').show();
+    }
+};
 
 
 //map
